@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "greenpagesdirectory.api", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "greenpagesdirectory.api.Tests", "greenpagesdirectory.api.Tests\greenpagesdirectory.api.Tests.csproj", "{6F528A3B-AFA0-401F-B619-208B7625D45F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "greenpages.web", "greenpages.web\greenpages.web.csproj", "{5D02B485-94B6-48D1-ADBE-09A70F58E67F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "greenpages.web.Tests", "greenpages.web.Tests\greenpages.web.Tests.csproj", "{E10B0E97-B5E9-4559-87F8-1C9A00C30F63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{6F528A3B-AFA0-401F-B619-208B7625D45F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F528A3B-AFA0-401F-B619-208B7625D45F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F528A3B-AFA0-401F-B619-208B7625D45F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D02B485-94B6-48D1-ADBE-09A70F58E67F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D02B485-94B6-48D1-ADBE-09A70F58E67F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D02B485-94B6-48D1-ADBE-09A70F58E67F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D02B485-94B6-48D1-ADBE-09A70F58E67F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E10B0E97-B5E9-4559-87F8-1C9A00C30F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E10B0E97-B5E9-4559-87F8-1C9A00C30F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E10B0E97-B5E9-4559-87F8-1C9A00C30F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E10B0E97-B5E9-4559-87F8-1C9A00C30F63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
