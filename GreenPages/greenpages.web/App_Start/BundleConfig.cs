@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace greenpages.web
+namespace GreenPages.WEb
 {
     public class BundleConfig
     {
@@ -10,9 +10,6 @@ namespace greenpages.web
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -23,9 +20,20 @@ namespace greenpages.web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+        ////    bundles.Add(new ScriptBundle("~/bundles/fontawsome", "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css").Include(
+        ////"~/Scripts/tinymce/tinymce.min.js"));
+
+        //    bundles.Add(new ScriptBundle("~/bundles/tinymce", "http://tinymce.cachefly.net/4.0/tinymce.min.js").Include(
+        //            "~/Scripts/tinymce/tinymce.min.js"));
+
+        //    bundles.Add(new ScriptBundle("~/bundles/pluginblog").Include(
+        //              "~/Scripts/pluginblog.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            
         }
     }
 }
