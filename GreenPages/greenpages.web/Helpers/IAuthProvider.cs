@@ -1,4 +1,4 @@
-namespace GreenPages.WEb.Helpers
+namespace GreenPages.Web.Helpers
 {
     public interface IAuthProvider
     {

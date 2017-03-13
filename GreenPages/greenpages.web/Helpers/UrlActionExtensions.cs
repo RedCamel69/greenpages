@@ -3,7 +3,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using GreenPagesBlog.Domain.Entities;
 
-namespace GreenPages.WEb.Helpers
+namespace GreenPages.Web.Helpers
 {
     public static class UrlActionExtensions
     {

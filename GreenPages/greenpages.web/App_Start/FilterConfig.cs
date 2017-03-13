@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace GreenPages.WEb
+namespace GreenPages.Web
 {
     public class FilterConfig
     {

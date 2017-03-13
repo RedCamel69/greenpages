@@ -4,7 +4,7 @@ using GreenPagesBlog.Repositories;
 using System;
 
 
-namespace GreenPages.WEb.Helpers
+namespace GreenPages.Web.Helpers
 {
     public class PluginBlogConfig
     {

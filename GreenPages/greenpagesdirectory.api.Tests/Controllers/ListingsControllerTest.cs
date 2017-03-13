@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using System.Web.Http;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using greenpagesdirectory.api;
-using greenpagesdirectory.api.Controllers;
-using System.Net.Http.Headers;
-using System.Web.Script.Serialization;
 using greenpagesdirectory.domain.Entities;
 
 namespace greenpagesdirectory.api.Tests.Controllers

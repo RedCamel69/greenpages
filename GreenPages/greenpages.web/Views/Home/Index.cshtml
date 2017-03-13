@@ -1,15 +1,33 @@
-﻿@using GreenPages.WEb.Helpers
+﻿@using GreenPages.Web.Helpers
 @model List<GreenPagesBlog.Domain.Entities.Post>
 @{
-    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.Title = "Home Page";
 }
+<section id="promo" class="promo section offset-header">
+    <div class="container text-center">
+        <h2 class="title">greenPages</h2><h2 class="highlight">Pages</h2>
+        <p class="intro">
+            Find your golfing nirvana
+        </p>
+
+        @Html.Partial("_partialSearch", new GreenPages.Web.Models.SearchRequest() { What = "Plumbers", Where = "Leeds" })
+
+       
+
+        <ul class="meta list-inline">
+          
+        </ul><!--//meta-->
+    </div><!--//container-->
+</section>
+
+
 
 <div class="jumbotron" >
-    <h1>Green Pages</h1>
-    <p class="lead">Find your golfing nirvana</p>
     <p><a href="@Url.Action("Index","Post", new { Area = "BlogAdmin"})" class="btn btn-primary btn-large">Go to the admin area (username: admin | password: demo) &raquo;</a></p>
 </div>
+
+
 
 <div class="row">
     
@@ -24,3 +42,17 @@
         </div>
     }
 </div>
+
+<section id="aboutFeatures" class="features section">
+    <div class="container text-center">
+        <h2 class="title">A big space for exciting content</h2>
+        <ul class="feature-list list-unstyled">
+            <li><i class="fa fa-check"></i>Want to register your course or facility</li>
+            <li><i class="fa fa-check"></i>Want to register your course or facility</li>
+            <li><i class="fa fa-check"></i>Want to register your course or facility</li>
+            <li><i class="fa fa-check"></i>Want to register your course or facility</li>
+            <li><i class="fa fa-check"></i>Want to register your course or facility</li>
+        </ul>
+    </div><!--//container-->
+</section>
+

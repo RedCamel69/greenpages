@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
-namespace GreenPages.WEb
+namespace GreenPages.Web
 {
     public class BundleConfig
     {

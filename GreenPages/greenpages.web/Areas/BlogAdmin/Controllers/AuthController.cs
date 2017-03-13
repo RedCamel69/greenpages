@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using GreenPages.WEb.Areas.BlogAdmin.Models;
-using GreenPages.WEb.Helpers;
+﻿using System.Web.Mvc;
+using GreenPages.Web.Areas.BlogAdmin.Models;
+using GreenPages.Web.Helpers;
 
-namespace GreenPages.WEb.Areas.BlogAdmin.Controllers
+namespace GreenPages.Web.Areas.BlogAdmin.Controllers
 {
     public class AuthController : Controller
     {

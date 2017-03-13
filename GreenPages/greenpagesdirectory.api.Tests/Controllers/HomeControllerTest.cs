@@ -1,6 +1,5 @@
 ﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using greenpagesdirectory.api;
 using greenpagesdirectory.api.Controllers;
 
 namespace greenpagesdirectory.api.Tests.Controllers

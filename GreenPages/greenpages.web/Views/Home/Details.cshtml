@@ -1,0 +1,81 @@
+﻿@model GreenPages.Web.Viewmodels.ListingDetailsViewmodel
+
+<br />
+<br />
+<br />
+
+<style>
+    /* Always set the map height explicitly to define the size of the div
+      * element that contains the map. */
+    #map {
+        height: 100%;
+    }
+    /* Optional: Makes the sample page fill the window. */
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+
+
+<div>
+    <h4>@Model.Listing.ListingName</h4>
+    <h4>@Model.Listing.Distance</h4>
+    <hr />
+    
+
+    <div id="map" class="initialMap" style="height:200px;width:400px;">
+
+    </div>
+
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<script>
+      var map;
+      //function initMap() {
+      //  map = new google.maps.Map(document.getElementById('map'), {
+      //    center: {lat: -34.397, lng: 150.644},
+      //    zoom: 8
+      //  });
+      //}
+
+    //function (latitude, longitude, shops) {
+
+      function initMap() {
+          document.getElementById("map").className = "";
+          document.getElementById("map").className = "showMap";
+
+          setTimeout(function () {
+
+              var myLatLng = { lat: @Model.Listing.Latitude, lng: @Model.Listing.Longitude};
+
+
+              // Create a map object and specify the DOM element for display.
+              var map = new google.maps.Map(document.getElementById('map'), {
+                  //center: { lat: latitude, lng: longitude },
+                  center: myLatLng,
+                  scrollwheel: false,
+                  zoom: 13
+              });
+
+
+              var marker = new google.maps.Marker({
+                  position: myLatLng,
+                  map: map,
+                  animation: google.maps.Animation.DROP,
+                  //title: shops[0].Name
+              });
+
+          }, 500);
+      }
+
+     
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSEAkIWnzysOs88Qd7Z0SS4u-osah1q4o&callback=initMap" async defer></script>

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace GreenPages.WEb.Areas.BlogAdmin
+namespace GreenPages.Web.Areas.BlogAdmin
 {
     public class BlogAdminAreaRegistration : AreaRegistration 
     {
@@ -18,7 +18,7 @@ namespace GreenPages.WEb.Areas.BlogAdmin
                 "BlogAdmin_default",
                 "BlogAdmin/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional },
-                new[] { "GreenPages.WEb.Areas.BlogAdmin.Controllers" }
+                new[] { "GreenPages.Web.Areas.BlogAdmin.Controllers" }
             );
         }
     }

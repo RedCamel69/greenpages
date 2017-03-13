@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 namespace greenpagesdirectory.api.Areas.HelpPage.ModelDescriptions

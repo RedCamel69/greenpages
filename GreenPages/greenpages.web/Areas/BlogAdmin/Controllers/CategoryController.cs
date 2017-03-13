@@ -1,4 +1,4 @@
-﻿using GreenPages.WEb.Helpers;
+﻿using GreenPages.Web.Helpers;
 using GreenPagesBlog.Domain.Entities;
 using GreenPagesBlog.Domain.Repositories;
 using System.Data;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Web.Mvc;
 
-namespace GreenPages.WEb.Areas.BlogAdmin.Controllers
+namespace GreenPages.Web.Areas.BlogAdmin.Controllers
 {
     public class CategoryController : BaseBlogController
     {

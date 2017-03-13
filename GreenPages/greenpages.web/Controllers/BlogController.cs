@@ -3,14 +3,14 @@ using System.Linq;
 using System.ServiceModel.Syndication;
 using System.Web;
 using System.Web.Mvc;
-using GreenPages.WEb.Helpers;
+using GreenPages.Web.Helpers;
 
 using GreenPagesBlog.Repositories;
 using GreenPagesBlog;
 using GreenPagesBlog.Domain.Repositories;
 using GreenPagesBlog.Domain.Entities;
 
-namespace GreenPages.WEb.Controllers
+namespace GreenPages.Web.Controllers
 {
     public class BlogController : Controller
     {

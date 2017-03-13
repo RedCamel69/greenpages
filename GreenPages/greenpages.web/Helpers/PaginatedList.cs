@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
-namespace GreenPages.WEb.Helpers
+namespace GreenPages.Web.Helpers
 {
     public class PaginatedList<T> : List<T>
     {

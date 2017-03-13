@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using GreenPagesBlog.Domain.Entities;
 
-namespace GreenPages.WEb.Areas.BlogAdmin.Models
+namespace GreenPages.Web.Areas.BlogAdmin.Models
 {
     public class EditPost
     {

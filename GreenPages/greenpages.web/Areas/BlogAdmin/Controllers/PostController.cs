@@ -1,5 +1,5 @@
-﻿using GreenPages.WEb.Areas.BlogAdmin.Models;
-using GreenPages.WEb.Helpers;
+﻿using GreenPages.Web.Areas.BlogAdmin.Models;
+using GreenPages.Web.Helpers;
 using GreenPagesBlog.Domain.Entities;
 using GreenPagesBlog.Domain.Repositories;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Web.Mvc;
 
 
-namespace GreenPages.WEb.Areas.BlogAdmin.Controllers
+namespace GreenPages.Web.Areas.BlogAdmin.Controllers
 {
     public class PostController : BaseBlogController
     {

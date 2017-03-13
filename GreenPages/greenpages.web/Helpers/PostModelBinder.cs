@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
-using GreenPages.WEb.Areas.BlogAdmin.Models;
+using GreenPages.Web.Areas.BlogAdmin.Models;
 using GreenPagesBlog.Repositories;
 using GreenPagesBlog.Domain.Entities;
 using GreenPagesBlog;
 using GreenPagesBlog.Domain.Repositories;
 
 
-namespace GreenPages.WEb.Helpers
+namespace GreenPages.Web.Helpers
 {
     /// <summary>
     /// Bind POST model to actions.

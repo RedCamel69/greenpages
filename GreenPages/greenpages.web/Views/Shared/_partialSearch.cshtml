@@ -1,0 +1,116 @@
+﻿
+@model GreenPages.Web.Models.SearchRequest
+
+
+<div class="container">
+
+
+    <br />
+    <br />
+
+    @using (Html.BeginForm("Search", "Home", FormMethod.Post, new { @class = "form-inline" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+
+            @Html.ValidationSummary(true)
+
+            <fieldset>
+                <div class="row">
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.What, new { @class = "control-label col-lg-0" })
+                        <div class="col-lg-3">
+                            @*@Html.EditorFor(model => model.What, new {@class="form-control", @htmlAttributes = new { @placeholder = "www" } })*@
+                            @*@Html.EditorFor(model => model.What, new { htmlAttributes = new { @class = "form-control",  @placeholder = "www" } ,})*@
+                           @* @Html.EditorFor(model => model.What)*@
+                            @Html.ValidationMessageFor(model => model.What)
+                            
+                            <select id="what" name="what" style="background-color: green;font-size: x-large;">
+                                <option selected="selected" value="Golf Courses and Clubs">Golf Courses and Clubs</option>
+                                <option value="Golf Driving Ranges">Golf Driving Ranges</option>
+                                <option value="Golf Shops and Supplies">Golf Shops and Supplies</option>
+
+                            </select>
+                           
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        
+                            @Html.LabelFor(model => model.Where, new { @class = "control-label col-lg-0" })
+                      
+                                                    <div class="col-lg-3">
+                                @*@Html.EditorFor(model => model.Where)*@
+                                @Html.ValidationMessageFor(model => model.Where)
+
+                                <select id="where" name="where" style="background-color: green;font-size: x-large;">
+                                    <option selected="selected" value="Manchester">Manchester</option>
+                                    <option value="Leeds">Leeds</option>
+                                    <option value="Glasgow">Glasgow</option>
+                                    <option value="Birmingham">Birmingham</option>
+                                    <option value="Sheffield">Sheffield</option>
+                                    <option value="Aberdeen">Aberdeen</option>
+                                    <option value="London">London</option>
+                                    <option value="Bristol">Bristol</option>
+                                    <option value="Plymouth">Plymouth</option>
+                                    <option value="Brighton">Brighton</option>
+                                    <option value="Newcastle">Newcastle</option>
+                                    <option value="Edinburgh">Edinburgh</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-xs-12">
+                            <input type="submit" value="Search" class="btns btn btn-cta-primary col-xs-12" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+    }
+
+</div>
+
+<script type="text/javascript">
+
+    document.getElementById("What").onkeydown = function (e) {
+
+        var code;
+        if (e.keyCode)
+            code = e.keyCode;
+        else if (e.which)
+            code = e.which;
+
+        if ((code >= 48) && (code <= 57)) { return false; }
+        {
+            var y = this;
+            return true;
+        }
+
+      //  if (key.keyCode >= 65 || key.keyCode <= 90) {
+      //      document.getElementById("What").value = key;
+      //  }
+
+    }
+
+    function Suggestions() {
+        alert('Lets get whats');
+
+    }
+
+    document.getElementById("What").onkeyup = function (key) {
+
+
+        var x = this;
+
+        if (this.value.length ==3)
+        {
+            alert('Lets get whats');
+        }
+    };
+
+</script>

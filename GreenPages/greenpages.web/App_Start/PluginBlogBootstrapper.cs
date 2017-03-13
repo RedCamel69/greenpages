@@ -1,11 +1,11 @@
 ﻿using System.Web.Optimization;
-using GreenPages.WEb.Helpers;
+using GreenPages.Web.Helpers;
 using GreenPagesBlog.Repositories;
 using GreenPagesBlog;
 
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(GreenPages.WEb.PluginBlogBootstrapper), "Start")]
-[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(GreenPages.WEb.PluginBlogBootstrapper), "PostStart")]
-namespace GreenPages.WEb
+[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(GreenPages.Web.PluginBlogBootstrapper), "Start")]
+[assembly: WebActivatorEx.PostApplicationStartMethod(typeof(GreenPages.Web.PluginBlogBootstrapper), "PostStart")]
+namespace GreenPages.Web
 {
     public class PluginBlogBootstrapper
     {

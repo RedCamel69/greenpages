@@ -1,11 +1,7 @@
 ﻿using greenpagesdirectory.domain.Abstract;
 using greenpagesdirectory.domain.Concrete;
 using greenpagesdirectory.domain.Entities;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace greenpagesdirectory.api.Controllers
@@ -29,9 +25,12 @@ namespace greenpagesdirectory.api.Controllers
 
 
         // GET: api/Listings/5
-        public string Get(int id)
+        public Listing Get(int id)
         {
-            return "value";
+            IListingRepository repo = new DevListingRepository();
+            var res = repo.Details(id);
+
+            return res;
         }
 
         // POST: api/Listings
